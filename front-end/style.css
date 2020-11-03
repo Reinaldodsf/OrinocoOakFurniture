@@ -1,0 +1,24 @@
+.footerColor {
+    background-color: #d7e1d8;
+}
+
+.linkcolor{
+    color: #000000;
+}
+.linkcolor:hover{
+    color: #474b48;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.jumbotron {
+    background-image: url("images/oakBackground.jpg");
+    
+}

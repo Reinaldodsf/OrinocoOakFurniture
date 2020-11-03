@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Orinoco Oak Furniture</title>
+    <link rel="stylesheet" href="style.css" type="text/css" >
+		
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/674e959240.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <nav class="col navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="index.html">Orinoco</a>
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div id="navbarContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto ">
+                            <li class="nav-item active px-md-3">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item px-md-3">
+                                <a class="nav-link" href="shoppingCart.html">Cart</a> <!--ADD LINK TO CART-->
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>    
+    </header>
+
+    <div class="container mb-5">
+        <section class="row">
+            <div class="col">
+                <div class="jumbotron text-center">
+                    <h1>Shopping Bag</h1>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div id="ProductResume" class="row">
+                <!--Products will be displayed here by Cart.js-->
+            </div>
+        </section>
+
+        <section id="userForm" class="border-top" hidden = 'true'> 
+            <!--User form will be hidden/unhidden by Cart.js  </section> hidden="true"> -->
+            <div class= "col col-lg-6 mx-auto">
+                <div class="card mt-5" >
+                    <h4 class="card-header bg-info text-white font-weight-bold text-center py-4">Submit Order</h4>
+                    <div class="card-body px-lg-5 pt-0">
+                        <form id="orderForm" class="text-center">
+                            <!-- First Name & Last Name Labels -->
+                            <div class="row text-left">
+                                <div class="col">
+                                    <label for="orderFirstName" class="ml-3 mt-3 mb-0 text-secondary">First Name</label>
+                                </div>
+                                <div class="col">
+                                    <label for="orderLastName" class="ml-3 mt-3 mb-0 text-secondary">Last Name</label>
+                                </div>
+                            </div>
+                            <!-- First Name & Last Name input -->
+                            <div class="row text-left">
+                                <div class="col">
+                                    <input type="text" id="orderFirstName" class="form-control" required>
+                                    <p id="msgFirstName" class="text-danger m-0" hidden = 'true'>Insert your name.</p>
+                                </div>
+                                <div class="col">
+                                    <input type="text" id="orderLastName" class="form-control" required>
+                                    <p id="msgLastName" class="text-danger m-0" hidden = 'true'>Insert your last name.</p>
+                                </div>
+                            </div>
+                            <div class = "text-left">
+                                <!-- Email -->
+                                <label for="orderEmail" class="ml-3 mt-3 mb-0 text-secondary">E-mail</label>
+                                <input type="email" id="orderEmail" class="form-control" placeholder="joe@example.com" required>
+                                <p id="msgEmail" class="text-danger m-0" hidden = 'true'>Insert your E-mail.</p>
+                                <p id="msgInvalidEmail" class="text-danger m-0" hidden = 'true'>The E-mail format is invalid.</p>
+
+                                <!-- Address -->
+                                <label for="orderAddress" class="ml-3 mt-3 mb-0 text-secondary">Address</label>
+                                <input type="text" id="orderAddress" class="form-control" placeholder="1234 Main St" required>
+                                <p id="msgAddress" class="text-danger m-0" hidden = 'true'>Insert your Address.</p>
+
+                                <!-- City -->
+                                <label for="orderCity" class="ml-3 mt-3 mb-0 text-secondary">City</label>
+                                <input type="text" id="orderCity" class="form-control w-50" placeholder="Paris" required> 
+                                <p id="msgCity" class="text-danger m-0" hidden = 'true'>Insert your City.</p>
+                            </div>
+                            <button type="submit" id="orderButton" class="btn bg-info btn-rounded text-white font-weight-bold my-4">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footerColor">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="text-center">
+                        <img class="m-3" src="./images/OrinocoLogo.png" height="50"alt="Site logo">
+                    </div>
+                    <div class="col text-center">    
+                        <!--Facebook-->
+                        <a class="btn-floating btn-lg btn-fb linkcolor" href="#" aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f"></i></a>
+                        <!--Twitter-->
+                        <a class="btn-floating btn-lg btn-tw linkcolor" href="#" aria-label="Facebook" type="button" role="button"><i aria-hidden="true" class="fab fa-twitter"></i></a>
+                        <!--Linkedin-->
+                        <a class="btn-floating btn-lg btn-li linkcolor" href="#" aria-label="Facebook" type="button" role="button"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a>
+                        <!--Instagram-->
+                        <a class="btn-floating btn-lg btn-ins linkcolor" href="#" aria-label="Facebook" type="button" role="button"><i aria-hidden="true" class="fab fa-instagram"></i></a>
+                        <!--Email-->
+                        <a class="btn-floating btn-lg btn-email linkcolor" href="#" aria-label="Facebook" type="button" role="button"><i aria-hidden="true" class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </footer>
+
+    <!--Product Display Javascript-->
+    <script src="js/cart.js" async></script>
+    
+    <!-- jQuery, popper.js and Bootstrap’s JavaScript library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

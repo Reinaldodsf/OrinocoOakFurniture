@@ -1,4 +1,16 @@
-# OrinocoOakFurniture
-The existing code is located in this repository. After cloning the repository, run npm
-install from within the project folder, and then run the server with node server
-(requires Node installed on your machine and run locally).
+# Orinoco - Oak Furniture #
+
+This is the back end server for Project 5 of the Junior Web Developer path.
+This is the app that was developed for the project 5 on Web development course. The back-end code was already created and I have created the front-end code for the app.
+
+### Prerequisites ###
+
+You will need to have Node and `npm` installed locally on your machine.
+
+### Installation ###
+
+Clone this repo. From within the project folder, run `npm install`. You 
+can then run the server with `node server`. 
+The server should run on `localhost` with default port `3000`. If the
+server runs on another port for any reason, this is printed to the
+console when the server starts, e.g. `Listening on port 3001`.

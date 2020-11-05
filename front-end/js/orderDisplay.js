@@ -72,7 +72,7 @@ deliveryTitle.textContent = 'Delivery Address';
 deliveryAddress.textContent = 'Address: ' + contacts[0].address;
 deliveryCity.textContent = 'City: ' + contacts[0].city;
 buyerTitle.textContent = 'User Details';
-buyerName.textContent = 'Name: ' + contacts[0].firstName + contacts[0].lastName;
+buyerName.textContent = 'Name: ' + contacts[0].firstName + " " + contacts[0].lastName;
 buyerEmail.textContent= 'E-mail: ' + contacts[0].email;
 
 //APPEND TO HTML orderPage.html
